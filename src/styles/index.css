@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Rabbits Dummy';
+  src: url('../assets/fonts/Rabbits-Dummy/Rabbits-Dummy.woff2') format('woff2'), /* Para navegadores modernos */
+       url('../assets/fonts/Rabbits-Dummy/Rabbits-Dummy.woff')  format('woff'), /* Para navegadores intermedios */
+       url('../assets/fonts/Rabbits-Dummy/Rabbits-Dummy.ttf')  format('truetype'); /* Para navegadores más antiguos */
+  font-weight: normal;
+  font-style: normal;
+}
