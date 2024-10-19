@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Rabbits Dummy';
-    src: local('Rabbits Dummy Dummy'), local('Rabbits-Dummy-Dummy'),
-        url('Rabbits-Dummy.woff2') format('woff2'),
-        url('Rabbits-Dummy.woff') format('woff'),
-        url('Rabbits-Dummy.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }

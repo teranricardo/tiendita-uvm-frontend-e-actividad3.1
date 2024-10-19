@@ -1,10 +1,33 @@
-function App() {
+import { Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from "./pages/Home";
+import Contact from './pages/Contact';
+import Products from './pages/Products';
+import ProductDetails from './pages/ProductDetails';
+import Error404 from './pages/Error404';
+
+export default function App() {
 
   return (
     <>
-      <h1 className="font-rabbits text-redAccent">Tiendita UVM</h1>
+      {/* Renderiza el encabezado de la aplicación */}
+      <Header />
+      {/* Definición de las rutas de la aplicación */}
+      <Routes>
+        {/* Ruta principal que carga la página de inicio */}
+        <Route index element={<Home />} />
+        {/* Ruta para la lista de productos */}
+        <Route path='productos' element={<Products />} />
+        {/* Ruta para los detalles de un producto específico */}
+        <Route path="productos/:productId" element={<ProductDetails />} />
+        {/* Ruta para la página de contacto */}
+        <Route path="contacto" element={<Contact />} />
+        {/* Ruta para manejar errores 404 (página no encontrada) */}
+        <Route path="*" element={<Error404 />} />
+      </Routes>
+      {/* Renderiza el pie de página de la aplicación */}
+      <Footer />
     </>
   )
 }
-
-export default App
